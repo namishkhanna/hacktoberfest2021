@@ -2,9 +2,9 @@
 ![Hacktoberfest 2021](hacktoberfest2021.PNG)
 
 <p align="center">
-   <img alt="GitHub pull-requests" src="https://img.shields.io/github/issues-pr/namishkhanna/hacktoberfest2020"></a>
-   <img alt="GitHub forks" src="https://img.shields.io/github/forks/namishkhanna/hacktoberfest2020"></a>
-   <img alt="GitHub stars" src="https://img.shields.io/github/stars/namishkhanna/hacktoberfest2020"></a>
+   <img alt="GitHub pull-requests" src="https://img.shields.io/github/issues-pr/namishkhanna/hacktoberfest2021"></a>
+   <img alt="GitHub forks" src="https://img.shields.io/github/forks/namishkhanna/hacktoberfest2021"></a>
+   <img alt="GitHub stars" src="https://img.shields.io/github/stars/namishkhanna/hacktoberfest2021"></a>
 </p>
 
 # Upload Different Types of Programs in any Language
