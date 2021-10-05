@@ -1,0 +1,329 @@
+
+<html>
+    <>
+    
+<styl>
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
+html, body {
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+.lead { font-family: 'Quicksand'; }
+.header-bar {
+	position: relative;
+	width: 50%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid #fffa;
+	border-left: 10px solid #fffa;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fffa;
+	border-right: 10px solid #fffa;
+	transition: 0.3s linear all;
+}
+.header-bar > .logo {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 10px;
+	transform: translateY(-50%);
+	color: #fffc;
+	font-family: 'Parisienne', cursive;
+	cursor: default;
+	user-select: none;
+}
+.slider-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.slider-menu > li {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: rgb(251, 70, 70);
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+}
+.slider-menu > li:hover {
+	color: rgb(216, 36, 36);
+	box-shadow: 0 50px 5px rgb(0, 0, 0) inset;
+}
+.aeu-signature {
+	position: fixed;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.aeu-signature { font-family: "Quicksand"; }
+.aeu-signature > img { height: 30px; }
+
+
+
+</styl>
+
+
+<div class="container">
+	<p class="lea"lets get started .></p>
+	<div class="header-bar">
+		<h1 class="logo">cuirosity</h1>
+		<ul class="slider-menu">
+			<li>
+		
+                <a href="index.html">Home  </a>			</li>
+			
+		</ul>
+	</div>
+
+	
+</div>
+
+
+
+
+
+<styl>
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+	
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+	
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+	
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+	
+	/* Caption text */
+	.text {
+	  color: #f5f5f5;
+	  font-size: 20px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	  font-family:cursive ;
+	}
+	
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+	@-webkit-keyframes fade ={
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .prev, .next,.text {font-size: 11px}
+	}
+	</style>
+
+
+
+<div class="slideshow-container">
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="compasss.jpeg" style="width:100%">
+	  <div class="text">When he was 5 years old, Einstein’s father gave him a compass. The instrument enthralled his curious young mind, as the needle always pointed north regardless of its position. The boy asked himself, "How?" And thus began Einstein's lifelong journey to understand unseen forces. "That experience made a deep and lasting impression on me," he later wrote. "Something deeper had to be hidden behind things." </div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="light2.webp" style="width:100%">
+	  <div class="text">While clocks can travel at different speeds, light can't. That's what Einstein postulated in 1905 with the special theory of relativity, which says the speed of light is constant. We take it for granted now, but at the time, this theory was radical. While supported by James Maxwell’s equations, the idea flew in the face of Newtonian physics. The concept that anyone in the universe, regardless of their own speed, would measure the speed of light as 300,000 km/s, meant that light behaves unlike anything else we know of. This core insight took him a step closer to the theory of general relativity, which essentially simply adds gravity to the equation. Special relativity put the burgeoning scientist on the map.</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="ei.jpg" style="width:100%">
+	  <div class="text">When Einstein died in 1955, a small, brown notebook was found among his papers. It contained within it the notes he was taking while working through the ideas of general relativity from the winter of 1912 when he moved from Prague to Zurich. The Zurich notebook contains amazing bits like a modified four-dimensional Pythagorean theorem to account for the curvature of spacetime. The notebook also contains traces of Einstein’s mistakes (yes, even he made them). Wrong assumptions and dead ends are all contained in the pieces of aged graph paper. All were part of the path to greatness.
+
+	  </div>
+	</div>
+	
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	
+
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	<center>
+    <h3 style=" background: linear-gradient(220deg, #309caf 1%, #ffffff 100%, #ffe600 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+     font-weight: bold;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:90px;">
+     Theory of everything  </h3>
+      </center>
+
+    
+
+        
+      <h1 style=" background: linear-gradient(220deg, #e7e7e7 1%, #ffffff 100%, #d6cd7e 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      
+     font-family:'Times New Roman', Times, serif;font: size 90px;">
+     
+      The theory of relativity usually encompasses two interrelated theories by Albert Einstein: special relativity and general relativity, proposed and published in 1905 and 1915, respectively. Special relativity applies to all physical phenomena in the absence of gravity. General relativity explains the law of gravitation and its relation to other forces of nature. It applies to the cosmological and astrophysical realm, including astronomy.[3]
+
+
+      Two-dimensional projection of a three-dimensional analogy of spacetime curvature described in general relativity
+      The theory transformed theoretical physics and astronomy during the 20th century, superseding a 200-year-old theory of mechanics created primarily by Isaac Newton. It introduced concepts including spacetime as a unified entity of space and time, relativity of simultaneity, kinematic and gravitational time dilation, and length contraction. In the field of physics, relativity improved the science of elementary particles and their fundamental interactions, along with ushering in the nuclear age. With relativity, cosmology and astrophysics predicted extraordinary astronomical phenomena such as neutron stars, black holes, and gravitational waves.
+      
+      Albert Einstein published the theory of special relativity in 1905, building on many theoretical results and empirical findings obtained by Albert A. Michelson, Hendrik Lorentz, Henri Poincaré and others. Max Planck, Hermann Minkowski and others did subsequent work.
+
+      Einstein developed general relativity between 1907 and 1915, with contributions by many others after 1915. The final form of general relativity was published in 1916.[3]
+      
+      The term "theory of relativity" was based on the expression "relative theory" (German: Relativtheorie) used in 1906 by Planck, who emphasized how the theory uses the principle of relativity. In the discussion section of the same paper, Alfred Bucherer used for the first time the expression "theory of relativity" (German: Relativitätstheorie).[6][7]
+      
+      By the 1920s, the physics community understood and accepted special relativity.[8] It rapidly became a significant and necessary tool for theorists and experimentalists in the new fields of atomic physics, nuclear physics, and quantum mechanics.
+      
+      By comparison, general relativity did not appear to be as useful, beyond making minor corrections to predictions of Newtonian gravitation theory.[3] It seemed to offer little potential for experimental test, as most of its assertions were on an astronomical scale. Its mathematics seemed difficult and fully understandable only by a small number of people. Around 1960, general relativity became central to physics and astronomy. New mathematical techniques to apply to general relativity streamlined calculations and made its concepts more easily visualized. As astronomical phenomena were discovered, such as quasars (1963), the 3-kelvin microwave background radiation (1965), pulsars (1967), and the first black hole candidates (1981),[3] the theory explained their attributes, and measurement of them further confirmed the theory.
+
+      </h1>
+      
+  
+</body>
+</html>
