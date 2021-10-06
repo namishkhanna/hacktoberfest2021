@@ -1,39 +1,41 @@
-import java.util.Scanner;
-
-public class bubbleSort {
-  // Swap Function
-      public static void swap(int array[],int i, int j){
-
-        if(i == j){
-            return;
-        }
-
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-
-    public static void main(String[] args) {
-      // User input in array
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-
-        for(int j = 0; j<n; j++){
-            arr[j] = sc.nextInt();
-        }
-    // Sorting, 
-        for(int lastUI = arr.length-1; lastUI > 0; lastUI--){
-            for(int i = 0; i<lastUI; i++){
-                if(arr[i]>arr[i+1]){
-                    swap(arr,i,i+1);
-                }
-            }
-        }
-      // printing array
-        for(int i = 0; i<arr.length; i++){
-            System.out.println(arr[i]);
-        }
-    }
-
+public class Main
+{
+   static void bubbleSort(int arr[], int n)
+   {
+       for (int i = 0; i < n-1; i++)
+       {  
+           // last i elements are already at the correct position
+           for (int j = 0; j < n-i-1; j++)
+           {
+               if (arr[j] > arr[j+1])
+               {  
+                   // swap arr[j], arr[j+1]
+                   int temp = arr[j];
+                   arr[j] = arr[j+1];
+                   arr[j+1] = temp;
+               }
+           }
+       }
+   }
+  
+   static void printArray(int arr[], int n)
+   {
+       for (int i = 0; i < n; i++)
+           System.out.print(arr[i] + " ");
+       System.out.println();
+   }
+  
+   public static void main(String args[])
+   {
+       int arr[] = {6, 3, 8, 9, 5};
+       int n = arr.length;
+      
+       System.out.print("Given Array: ");
+       printArray(arr, n);
+      
+       bubbleSort(arr, n);
+      
+       System.out.print("Sorted Array: ");
+       printArray(arr, n);
+   }
 }
