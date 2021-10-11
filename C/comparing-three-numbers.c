@@ -1,20 +1,23 @@
 #include <stdio.h>
 
 int main() {
-   int a, b, c;
+   int a, b, c,flag;
 
    a = 11;
    b = 22;
    c = 33;
-
-   if ( a > b && a > c )
-      printf("%d is the largest.", a);
-   else if ( b > a && b > c )
-      printf("%d is the largest.", b);
-   else if ( c > a && c > b )
-      printf("%d is the largest.", c);
-   else   
-      printf("Values are not unique");
-
+   while(a!=b!=c){
+      if(a>b && a>c){
+         flag=a;
+      }
+      if(b>c && b>c){
+         flag=b;
+      }
+      else{
+         flag=c;
+      }
+      printf("Largest number is %d",flag);
+      break;
+   }
    return 0;
 }
