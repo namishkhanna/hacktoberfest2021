@@ -1,0 +1,79 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(penguins.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    background-color: seashell;
+    color: lightseagreen;
+    border:5px solid whitesmoke;
+    border-radius: 70%;
+    opacity: 0.8;
+    height: 30px;
+    width: 70px;
+    position: relative;
+    padding: 30px;
+    margin:0;
+    right: 30px;
+    top:95px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+.login-page{
+    width: 320px;
+    padding:10% 0 0 ;
+    right:40px;
+    left: 25px;
+}
+.form{
+    position: relative;
+    z-index: 0;
+    max-width: 360px;
+    background: rgba(224, 223, 217, 0.8);
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    transform: translate(-10%, -10%);
+    left:10px;
+}
+.form input{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+    background:f2f2f2;
+    width:100%;
+    border: 1px solid black;
+    padding: 15px;
+    margin:0 0 15px;
+    font-size: 15px;
+}
+.btn{
+    text-transform: uppercase;
+    width: 40%;
+    padding: 15px;
+    outline: 0;
+    border: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: lightblue ;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+.reset{
+    text-transform: uppercase;
+    width: 40%;
+    padding: 15px;
+    outline: 0 blue;
+    border: 0 blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: pink ;
+    border-radius: 20%;
+    border:2px solid white;
+}
+
