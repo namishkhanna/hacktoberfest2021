@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="”utf-8″" />
+
+  <title>Simple Interest Calculator</title>
+
+  <body>
+    <article>
+      <header>
+        <h1>Simple Interest Calculator</h1>
+
+        <p>Calculate Total Amount</p>
+      </header>
+      <table>
+        <tr>
+          <td>Principal</td>
+          <td><input id="principal" type="text" /></td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td><input id="period" type="text" /></td>
+        </tr>
+        <tr>
+          <td>Interest Rate</td>
+          <td><input id="interest" type="text" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" onclick="calculate()" value="Calculate" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+
+      <p id="result">Total Amount :</p>
+    </article>
+  </body>
+  <script>
+    function calculate() {
+      var p = document.getElementById("principal").value;
+      var r = document.getElementById("interest").value;
+      var d = document.getElementById("period").value;
+      var i = (p * r * d) / 100 + +p;
+
+      document.getElementById("result").innerHTML = "Total Amount : " + i;
+    }
+  </script>
+</html>
