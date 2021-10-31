@@ -1,0 +1,209 @@
+.imagesDiv {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+body {
+    overflow-x: hidden;
+    background-color: black !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.images {
+    object-fit: contain;
+    width: 100%;
+    max-height: 150px;
+    margin-right: 15px;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+body.modal-open {
+    overflow: scroll;
+}
+.logoImage {
+    object-fit: contain;
+    width: 7em;
+    padding: 20px;
+}
+.avatarImage {
+    object-fit: contain;
+    width: 2em;
+    padding: 20px;
+}
+.nav_black {
+    background-color: black;
+}
+.nav-link {
+    color: rgb(196, 193, 193)!important;
+}
+.active {
+    color: white!important;
+}
+.nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+.images:hover {
+    transform: scale(0.9) !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.firstRowImage {
+    max-height: 250px;
+}
+.firstRowImage:hover {
+    transform: scale(1.2) !important;
+}
+.videoDiv {
+    display: none;
+}
+i {
+    cursor: pointer;
+}
+.videoContent, .imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rowDiv {
+    margin-top: 1.5em;
+    color: white;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header.films {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/banner_film.jpg);
+    background-position: top center;
+    color: white;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.series {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/banner.jpg);
+    background-position: center bottom;
+    color: white;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headerContent {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headerContent h1 {
+    margin-top: 3em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.description {
+    letter-spacing: 1px;
+}
+.buttonDiv button {
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    padding-left: 2em;
+    margin-right: 1em;
+    padding-right: 2em;
+    margin-bottom: 1.5em;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.buttonDiv button:hover {
+    transition: all 0.4s
+}
+.videoButton {
+    background-color: white!important;
+    color: black !important;
+}
+.fadeDiv {
+    margin-top: 1em!important;
+    height: 7em;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111)!important;
+}
+.rowDiv h1 {
+    font-size: 1em;
+}
+.navbar-nav {
+    display: inline-block!important;
+}
+.nav-item {
+    padding-left: 5px;
+    display: inline-block!important;
+}
+@media (min-width:0px) and (max-width:375px) {
+    .rowDiv h1 {
+        font-size: 1em;
+    }
+    .headerContent {
+        padding: 1.5em !important;
+    }
+    .rowDiv h1 {
+        font-size: 1.7em;
+    }
+    .headerContent h1 {
+        font-size: 2em;
+    }
+    .description {
+        width: 100%
+    }
+}
+@media (min-width:376px) and (max-width:500px) {
+    .rowDiv h1 {
+        font-size: 1.5em;
+    }
+    .headerContent {
+        padding: 1.5em !important;
+        padding-top: 6em !important;
+    }
+    .headerContent h1 {
+        margin-top: 1.3em;
+        font-size: 2em;
+    }
+    .description {
+        width: 100%;
+    }
+}
+@media (min-width:501px) and (max-width:1440px) {
+    .rowDiv h1 {
+        font-size: 1.5em;
+    }
+    .headerContent {
+        padding-top: 5em !important;
+        margin-left: 1.8em!important;
+    }
+    .headerContent h1 {
+        margin-top: 1.3em;
+        font-size: 2em;
+    }
+    .description {
+        width: 25em
+    }
+}
+@media (min-width:1441px) {
+    .rowDiv h1 {
+        font-size: 1.5em;
+    }
+    .headerContent {
+        padding-top: 5em !important;
+        margin-left: 4em;
+    }
+    .headerContent h1 {
+        margin-top: 1.3em;
+        font-size: 2em;
+    }
+    .description {
+        width: 25em
+    }
+}

@@ -1,0 +1,605 @@
+body {
+    margin: 0 auto;
+}
+.accountDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5em;
+}
+.accountContent {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+    color: white;
+}
+.navbar-toggler {
+    border-color: white!important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.accountInput {
+    background-color: #333 !important;
+    outline: none;
+    color: white!important;
+    -webkit-appearance: none !important;
+    border-width: 0px !important;
+    border: none !important;
+}
+.signUpContent {
+    display: none;
+}
+.signInContent {
+    display: block;
+}
+.accountButton {
+    background-color: #e50914;
+    color: white;
+}
+.lightText {
+    color: rgb(168, 168, 168);
+}
+.whiteText {
+    color: white;
+}
+.whiteText:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/HeaderImage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.doubleLine {
+    border-top: 2px solid black;
+    height: 0.7em;
+    border-bottom: 1px solid black;
+    background-color: #222;
+}
+.content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+    background-color: black;
+}
+.faq-title {
+    padding-bottom: 1em;
+}
+.svg-icon-netflix-logo {
+    -webkit-text-size-adjust: 100%;
+    color: #333;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-box-direction: normal;
+    fill: #e50914;
+    line-height: normal;
+    overflow: hidden;
+    padding-top: 0;
+    width: 8.375rem;
+    height: 2.25rem;
+}
+.nfLogo {
+    fill: #e50914;
+}
+.headerBtn {
+    background: #e50914;
+    color: white;
+}
+.our-story-card-img-container {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    height: 100%;
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+}
+.our-story-card-animation-image {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    margin: 0 1em 0 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.our-story-card-animation-container {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    position: relative;
+    overflow: hidden;
+    margin: -5% 0 0 0;
+}
+.our-story-card-img {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+.our-story-card-animation {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.our-story-card-video {
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-box-direction: normal;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+}
+.our-story-card-text {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    padding: 150px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+.our-story-card-title {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.our-story-card-subtitle {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    max-width: 640px;
+    margin: 1rem auto;
+    font-size: 1.625rem;
+}
+.cta-form {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    max-width: 950px;
+    padding-top: .85rem;
+}
+.email-form-title {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    -webkit-box-direction: normal;
+    padding: 0 5%;
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: none;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+.email-form-lockup {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.simpleForm {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    -webkit-box-direction: normal;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    text-align: right;
+}
+.nfFormSpace {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    -webkit-box-direction: normal;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left: 0;
+}
+.nfInput {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    -webkit-box-direction: normal;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+.nfInputPlacement {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    -webkit-box-direction: normal;
+    list-style: none;
+    position: relative;
+}
+.nfTextField {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-direction: normal;
+    list-style: none;
+    unicode-bidi: isolate;
+    font: inherit;
+    margin: 0;
+    line-height: normal;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    appearance: none;
+    color: #000;
+    box-shadow: none;
+    padding: 10px 10px 0;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.our-story-cta-container {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    -webkit-box-direction: normal;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    float: none;
+}
+.nmhp-cta {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .45);
+    position: relative;
+    min-width: 74px;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: initial;
+    width: auto;
+    padding: 0 1em;
+    font-size: 1.625rem;
+    min-height: 60px;
+    margin: 0!important;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 1px solid #333;
+}
+.cta-btn-txt {
+    -webkit-text-size-adjust: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font: inherit;
+    text-transform: none;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    user-select: none;
+    color: #fff;
+    -webkit-box-direction: normal;
+    font-size: 1.625rem;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    text-align: center;
+}
+.divContent {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+.faq-list li {
+    margin: 30px 0;
+    padding: 27px 30px;
+    margin: 0px auto 30px;
+    text-align: left;
+    width: 50em;
+    background-color: #303030;
+    ;
+}
+.footerContent {
+    color: #757575;
+    background-color: black;
+}
+.footerContent p, select {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+.navSelect {
+    padding: 0.6em;
+    background-color: transparent;
+    color: #fff;
+}
+.navSelect option {
+    background-color: #757575;
+}
+.footerContent select {
+    padding: 0.6em;
+}
+.getStartedIcon {
+    padding-left: 0.5em;
+}
+.footerContent p, select {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+.footerContent p, select {
+    color: #757575;
+    background-color: black;
+}
+.footerContent select option {
+    background-color: #757575;
+    color: #fff;
+}
+.faq-list .faq-heading::before {
+    content: '+';
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -8px;
+}
+.faq-list .the-active .faq-heading::before {
+    content: '-';
+}
+.faq-heading {
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+.faq-heading:hover {
+    color: var(--theme-color);
+}
+.faq-text {
+    display: none;
+}
+.art-box svg {
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+.row .col {
+    flex-basis: 50%;
+}
+.read {
+    border-top: 1px solid black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+.searchbarContent {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+@media (min-width:0px) and (max-width:720px) {
+    .email-form-lockup {
+        width: 98%;
+        flex-direction: column;
+    }
+    .simpleForm, .nfInput, .nfTextField {
+        width: 98%;
+    }
+    .faq-list li {
+        width: 100%;
+    }
+    .our-story-card-text {
+        padding-top: 2em;
+    }
+    .our-story-card-title {
+        font-size: 1.5em;
+        letter-spacing: 0px;
+    }
+    .our-story-card-subtitle, .email-form-title {
+        font-size: 0.6em;
+    }
+    .nfTextField {
+        height: 3em;
+    }
+    .our-story-cta-container {
+        text-align: center;
+    }
+    .cta-btn-txt {
+        font-size: 1em;
+    }
+    .nmhp-cta {
+        min-height: 0.6em;
+    }
+    .divContent {
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    .divContent:nth-child(2) {
+        margin-top: 4em;
+    }
+    .faq-list li {
+        width: 98%;
+    }
+    .faq-title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .card-title {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+}
+@media (min-width:281px) and (max-width:720px) {
+    .our-story-card-text {
+        padding-top: 4em;
+    }
+}
+@media (min-width:721px) and (max-width:1440px) {
+    .nfInput {
+        max-width: 500px;
+    }
+    .nfTextField {
+        min-width: 525px;
+        height: 60px;
+    }
+    .card-text {
+        font-size: 1.2em;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px) {
+    .card-text {
+        font-size: 1.4em;
+    }
+}
+@media (min-width:1441px) {
+    .nfInput {
+        max-width: 500px;
+    }
+    .nfTextField {
+        min-width: 525px;
+        height: 60px;
+    }
+    .our-story-card-title {
+        font-size: 2em;
+    }
+    .card-text {
+        font-size: 1.4em;
+    }
+}

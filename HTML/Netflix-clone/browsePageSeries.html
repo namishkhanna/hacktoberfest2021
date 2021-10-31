@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix-Browse</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/browsePage.css" />
+</head>
+
+<body>
+  <header class="series">
+    <nav class="navbar navbar-expand-lg nav navbar-light fixed-top" id="nav">
+      <a href="./index.html">
+        <img class="navbar-brand logoImage" src="Images/netflix-logo.png" alt="logoImage" />
+      </a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link " href="./browsePageFilms.html">Films</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./browsePageSeries.html">Series</a>
+        </li>
+    </nav>
+    <div class="headerContent pt-5 p-4">
+      <h1>Money Heist</h1>
+      <div class="description">
+        To carry out the biggest heist in history, a mysterious man called the professor recruits a band of
+        eight robbers who have a single characteristic : n...
+      </div>
+      <div class="buttonDiv">
+        <button data-toggle="modal" class="video-btn mt-3" data-target="#myModal"
+          data-src="https://www.youtube.com/embed/htqXL94Rza4?autohide=1&autoplay=1">
+          Play
+        </button>
+      </div>
+    </div>
+    <div class="fadeDiv"></div>
+  </header>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content ">
+        <div style="height: 360px;">
+          <iframe width='100%' height='100%' src="" id="video" frameborder='0' allowscriptaccess="always"
+            allow="autoplay ; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="rowDiv">
+    <h1>NETFLIX ORIGINALS</h1>
+    <div class="imagesDiv">
+      <img src="./Images/large-series1.jpg" onClick="showVideo(0)" class="firstRowImage images" alt="image_1" />
+      <img src="./Images/large-series2.jpg" onClick="showVideo(1)" class="firstRowImage images" alt="image_2" />
+      <img src="./Images/large-series3.jpg" onClick="showVideo(2)" class="firstRowImage images" alt="image_3" />
+      <img src="./Images/large-series4.jpg" onClick="showVideo(3)" class="firstRowImage images" alt="image_4" />
+      <img src="./Images/large-series5.jpg" onClick="showVideo(4)" class="firstRowImage images" alt="image_5" />
+      <img src="./Images/large-series6.jpg" onClick="showVideo(5)" class="firstRowImage images" alt="image_6" />
+      <img src="./Images/large-series7.jpg" onClick="showVideo(6)" class="firstRowImage images" alt="image_7" />
+      <img src="./Images/large-series8.jpg" onClick="showVideo(7)" class="firstRowImage images" alt="image_8" />
+      <img src="./Images/large-series1.jpg" onClick="showVideo(0)" class="firstRowImage images" alt="image_1" />
+      <img src="./Images/large-series2.jpg" onClick="showVideo(1)" class="firstRowImage images" alt="image_2" />
+      <img src="./Images/large-series3.jpg" onClick="showVideo(2)" class="firstRowImage images" alt="image_3" />
+      <img src="./Images/large-series4.jpg" onClick="showVideo(3)" class="firstRowImage images" alt="image_4" />
+      <img src="./Images/large-series5.jpg" onClick="showVideo(4)" class="firstRowImage images" alt="image_5" />
+      <img src="./Images/large-series6.jpg" onClick="showVideo(5)" class="firstRowImage images" alt="image_6" />
+      <img src="./Images/large-series7.jpg" onClick="showVideo(6)" class="firstRowImage images" alt="image_7" />
+      <img src="./Images/large-series8.jpg" onClick="showVideo(7)" class="firstRowImage images" alt="image_8" />
+    </div>
+    <div class="videoDiv  mb-3 mt-3">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 imageDiv">
+            <img src="" class="card-img insertImage" alt="..." style="height:auto">
+          </div>
+          <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 videoContent mt-5">
+            <h2 class='videoHeading'></h2>
+            <p class="videoDescription"></p>
+            <div class="buttonDiv ">
+              <button data-toggle="modal" class="video-btn videoButton" data-target="#myModal"
+                data-src="https://www.youtube.com/embed/EnjTEzi7m0k?autohide=1&autoplay=1">
+                Play
+              </button>
+            </div>
+          </div>
+          <div class="pl-4 position-absolute top-0 right-0">
+            <i class="fa fa-close" onclick="closeVideoDiv(0)" style="font-size:36px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rowDiv">
+      <h1>Trending Now</h1>
+      <div class="imagesDiv">
+        <img src="./Images/small-series1.jpg " onClick="showTrending(8)" class="images" alt="image_9" />
+        <img src="./Images/small-series2.jpg " onClick="showTrending(9)" class="images" alt="image_10" />
+        <img src="./Images/small-series3.jpg " onClick="showTrending(10)" class="images" alt="image_11" />
+        <img src="./Images/small-series4.jpg " onClick="showTrending(11)" class="images" alt="image_12" />
+        <img src="./Images/small-series5.jpg " onClick="showTrending(12)" class="images" alt="image_13" />
+        <img src="./Images/small-series6.jpg " onClick="showTrending(13)" class="images" alt="image_14" />
+        <img src="./Images/small-series7.jpg " onClick="showTrending(14)" class="images" alt="image_15" />
+        <img src="./Images/small-series8.jpg " onClick="showTrending(15)" class="images" alt="image_16" />
+        <img src="./Images/small-series1.jpg " onClick="showTrending(8)" class="images" alt="image_9" />
+        <img src="./Images/small-series2.jpg " onClick="showTrending(9)" class="images" alt="image_10" />
+        <img src="./Images/small-series3.jpg " onClick="showTrending(10)" class="images" alt="image_11" />
+        <img src="./Images/small-series4.jpg " onClick="showTrending(11)" class="images" alt="image_12" />
+        <img src="./Images/small-series5.jpg " onClick="showTrending(12)" class="images" alt="image_13" />
+        <img src="./Images/small-series6.jpg " onClick="showTrending(13)" class="images" alt="image_14" />
+        <img src="./Images/small-series7.jpg " onClick="showTrending(14)" class="images" alt="image_15" />
+        <img src="./Images/small-series8.jpg " onClick="showTrending(15)" class="images" alt="image_16" />
+      </div>
+      <div class="videoDiv  mb-3 mt-3">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 imageDiv">
+              <img src="" class="card-img insertImage" alt="..." style="height:auto">
+            </div>
+            <div class="col-md-8 col-lg-8 videoContent col-sm-12 col-xs-12 mt-5">
+              <h2 class='videoHeading'></h2>
+              <p class="videoDescription"></p>
+              <div class="buttonDiv ">
+                <button data-toggle="modal" class="video-btn videoButton" data-target="#myModal"
+                  data-src="https://www.youtube.com/embed/EnjTEzi7m0k?autohide=1&autoplay=1">
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="pl-4 position-absolute top-0 right-0">
+              <i class="fa fa-close" onclick="closeVideoDiv(1)" style="font-size:36px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rowDiv">
+      <h1>Top Rated</h1>
+      <div class="imagesDiv">
+        <img src="./Images/top_rated_series1.jpg " onClick="showTopRated(16)" class="images" alt="image_17" />
+        <img src="./Images/top_rated_series2.webp " onClick="showTopRated(17)" class="images" alt="image_18" />
+        <img src="./Images/top_rated_series3.webp " onClick="showTopRated(18)" class="images" alt="image_19" />
+        <img src="./Images/top_rated_series4.webp " onClick="showTopRated(19)" class="images" alt="image_20" />
+        <img src="./Images/top_rated_series5.webp " onClick="showTopRated(20)" class="images" alt="image_21" />
+        <img src="./Images/top_rated_series6.webp " onClick="showTopRated(21)" class="images" alt="image_22" />
+        <img src="./Images/top_rated_series7.webp " onClick="showTopRated(22)" class="images" alt="image_23" />
+        <img src="./Images/top_rated_series8.webp " onClick="showTopRated(23)" class="images" alt="image_24" />
+        <img src="./Images/top_rated_series1.jpg " onClick="showTopRated(16)" class="images" alt="image_17" />
+        <img src="./Images/top_rated_series2.webp " onClick="showTopRated(17)" class="images" alt="image_18" />
+        <img src="./Images/top_rated_series3.webp " onClick="showTopRated(18)" class="images" alt="image_19" />
+        <img src="./Images/top_rated_series4.webp " onClick="showTopRated(19)" class="images" alt="image_20" />
+        <img src="./Images/top_rated_series5.webp " onClick="showTopRated(20)" class="images" alt="image_21" />
+        <img src="./Images/top_rated_series6.webp " onClick="showTopRated(21)" class="images" alt="image_22" />
+        <img src="./Images/top_rated_series7.webp " onClick="showTopRated(22)" class="images" alt="image_23" />
+        <img src="./Images/top_rated_series8.webp " onClick="showTopRated(23)" class="images" alt="image_24" />
+      </div>
+      <div class="videoDiv  mb-3 mt-3">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 imageDiv">
+              <img src="" class="card-img insertImage" alt="..." style="height:auto">
+            </div>
+            <div class="col-md-8 col-lg-8 mt-5 col-sm-12 col-xs-12 videoContent">
+              <h2 class='videoHeading'></h2>
+              <p class="videoDescription"></p>
+              <div class="buttonDiv ">
+                <button data-toggle="modal" class="video-btn videoButton" data-target="#myModal"
+                  data-src="https://www.youtube.com/embed/EnjTEzi7m0k?autohide=1&autoplay=1">
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="pl-4 position-absolute top-0 right-0">
+              <i class="fa fa-close" onclick="closeVideoDiv(2)" style="font-size:36px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rowDiv">
+      <h1>Action Series</h1>
+      <div class="imagesDiv">
+        <img src="./Images/action_series1.jpg " onClick="showActionSeries(24)" class="images" alt="image_25" />
+        <img src="./Images/action_series2.jpg " onClick="showActionSeries(25)" class="images" alt="image_26" />
+        <img src="./Images/action_series3.jpg " onClick="showActionSeries(26)" class="images" alt="image_27" />
+        <img src="./Images/action_series4.jpg " onClick="showActionSeries(27)" class="images" alt="image_28" />
+        <img src="./Images/action_series5.jpg " onClick="showActionSeries(28)" class="images" alt="image_29" />
+        <img src="./Images/action_series6.jpg " onClick="showActionSeries(29)" class="images" alt="image_30" />
+        <img src="./Images/action_series7.jpg " onClick="showActionSeries(30)" class="images" alt="image_31" />
+        <img src="./Images/action_series8.jpg " onClick="showActionSeries(31)" class="images" alt="image_32" />
+        <img src="./Images/action_series1.jpg " onClick="showActionSeries(24)" class="images" alt="image_25" />
+        <img src="./Images/action_series2.jpg " onClick="showActionSeries(25)" class="images" alt="image_26" />
+        <img src="./Images/action_series3.jpg " onClick="showActionSeries(26)" class="images" alt="image_27" />
+        <img src="./Images/action_series4.jpg " onClick="showActionSeries(27)" class="images" alt="image_28" />
+        <img src="./Images/action_series5.jpg " onClick="showActionSeries(28)" class="images" alt="image_29" />
+        <img src="./Images/action_series6.jpg " onClick="showActionSeries(29)" class="images" alt="image_30" />
+        <img src="./Images/action_series7.jpg " onClick="showActionSeries(30)" class="images" alt="image_31" />
+        <img src="./Images/action_series8.jpg " onClick="showActionSeries(31)" class="images" alt="image_32" />
+      </div>
+      <div class="videoDiv  mb-3 mt-3">
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 imageDiv">
+              <img src="" class="card-img insertImage" alt="..." style="height:auto">
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 mt-5 videoContent">
+              <h2 class='videoHeading'></h2>
+              <p class="videoDescription"></p>
+              <div class="buttonDiv ">
+                <button data-toggle="modal" class="video-btn videoButton" data-target="#myModal"
+                  data-src="https://www.youtube.com/embed/EnjTEzi7m0k?autohide=1&autoplay=1">
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="pl-4 position-absolute top-0 right-0">
+              <i class="fa fa-close" onclick="closeVideoDiv(3)" style="font-size:36px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer font-small footerContent unique-color-dark">
+      <div class="container pt-5">
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Questions? Call 000-800-040-1843
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center text-md-left mt-2">
+        <div class="row ">
+          <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3  mb-4 ">
+            <p>
+              FAQ
+            </p>
+            <p>
+              Investor Relations
+            </p>
+            <p>
+              Privacy
+            </p>
+            <p>
+              Speed Test
+            </p>
+            <div style="font-family:FontAwesome">
+              <select>
+                <option value="English"> <i class="fa fa-globe" aria-hidden="true"> &#xf0ac;</i>English
+                </option>
+                <option value="Hindi"><i class="fa fa-globe" aria-hidden="true"> &#xf0ac;</i> हिंदी
+                </option>
+              </select>
+            </div>
+            <p class="mt-3">Netflix India</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3  mb-4">
+            <p>
+              Help Centre
+            </p>
+            <p>
+              Jobs
+            </p>
+            <p>
+              Cookie Preferences
+            </p>
+            <p>
+              Legal Notices
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3  mb-4">
+            <p>
+              Account
+            </p>
+            <p>
+              Ways to Watch
+            </p>
+            <p>
+              Corporate Information
+            </p>
+            <p>
+              Only on Netflix
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3  mb-md-0 mb-4">
+            <p>
+              Media Centre</p>
+            <p>
+              Terms of Use</p>
+            <p>
+              Contact Us</p>
+          </div>
+        </div>
+      </div>
+      <div class=" text-center py-3">
+        Developed with ❤️ by Anju Priya V
+      </div>
+    </footer>
+    <script>
+      alert("The Content in this page is just Sample content for cloning Purpose, not apt content ")
+
+    </script>
+    <script src="./JS/browsePageSeries.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
